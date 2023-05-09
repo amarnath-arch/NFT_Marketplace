@@ -136,14 +136,15 @@ const Navbar = () => {
 
                     {/* Create Button  */}
                     <div className={Style.navbar_container_right_button}>
-                        <Button buttonText="Create"/>
+                        <Button btnName="Create" handleClick={()=>{}}/>
                     </div>
 
 
                     {/* User Profile  */}
                     <div className={Style.navbar_container_right_profile_box}>
                         <div className={Style.navbar_container_right_profile}>
-                            <Image src={images.user1} height={40} width={40} onClick={ () => openProfile()} />
+                            <Image src={images.user1} height={40} width={40} onClick={ () => openProfile()} 
+                            className={Style.navbar_container_right_profile_img} />
                             {profile && <Profile /> }
                         </div>
 
@@ -162,7 +163,7 @@ const Navbar = () => {
             {/* Sidebar Component  */}
             {
                 openSideMenu && (
-                    <div className={Style.Sidebar}>
+                    <div className={Style.sideBar}>
                         <SideBar setOpenSideMenu={setOpenSideMenu} />
                     </div>
                 )
