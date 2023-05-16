@@ -5,6 +5,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import Services from "./Services/Services";
 import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
 import Subscribe from "./Subscribe/Subscribe";
+import Title from "./Title/Title";
 
 export{
     Navbar,
@@ -13,5 +14,6 @@ export{
     HeroSection,
     Services,
     BigNFTSlider,
-    Subscribe
+    Subscribe,
+    Title
 };
