@@ -34,7 +34,7 @@ const BigNFTSlider = () => {
         {
           title: "Buddy NFT",
           id: 2,
-          name: "Shoaib Hussain",
+          name: "Luke",
           collection: "Home",
           price: "0000004 ETH",
           like: 243,
