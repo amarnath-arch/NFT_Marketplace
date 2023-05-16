@@ -6,6 +6,7 @@ import Services from "./Services/Services";
 import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
 import Subscribe from "./Subscribe/Subscribe";
 import Title from "./Title/Title";
+import Category from "./Category/Category";
 
 export{
     Navbar,
@@ -15,5 +16,6 @@ export{
     Services,
     BigNFTSlider,
     Subscribe,
-    Title
+    Title,
+    Category
 };
