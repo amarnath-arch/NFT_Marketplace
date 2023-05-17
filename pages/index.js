@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { HeroSection,Services,BigNFTSlider,Subscribe,Title,Category,Filter } from '@/components/componentindex'
+import { HeroSection,Services,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard } from '@/components/componentindex'
 import Style from "../styles/index.module.css";
 
 
@@ -12,6 +12,7 @@ const Home = () => {
       <BigNFTSlider />
       <Title heading="Featured NFTs" paragraph="Discover the most oustanding NFTs in all topics of life." />
       <Filter />
+      <NFTCard />
       <Title heading="Browse by category" paragraph="Explore the NFTs in most featured categories." />
       <Category />
       <Subscribe />
