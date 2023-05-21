@@ -12,6 +12,7 @@ import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import FollowerTab from "./FollowerTab/FollowerTab";
 import AudioLive from "./AudioLive/AudioLive";
+import Slider from "./Slider/Slider";
 
 export{
     Navbar,
@@ -27,5 +28,6 @@ export{
     Category,
     Collection,
     FollowerTab,
+    Slider,
     AudioLive
 };

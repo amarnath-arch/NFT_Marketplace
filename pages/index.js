@@ -1,9 +1,10 @@
 import React from 'react'
 
 import { HeroSection,Services,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,
-        Collection,FollowerTab, AudioLive
+        Collection,FollowerTab, AudioLive,Slider
 } from '@/components/componentindex'
 import Style from "../styles/index.module.css";
+
 
 
 const Home = () => {
@@ -15,6 +16,9 @@ const Home = () => {
       <Title heading="Latest Audio" paragraph="Discover the most oustanding NFTs in all topics of life." />
       <AudioLive />
       <FollowerTab />
+
+      <Slider />
+
       <Collection />
       <Title heading="Featured NFTs" paragraph="Discover the most oustanding NFTs in all topics of life." />
       <Filter />
