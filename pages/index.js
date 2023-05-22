@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { HeroSection,Services,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,
-        Collection,FollowerTab, AudioLive,Slider
+        Collection,FollowerTab, AudioLive,Slider,Brand
 } from '@/components/componentindex'
 import Style from "../styles/index.module.css";
 
@@ -26,6 +26,7 @@ const Home = () => {
       <Title heading="Browse by category" paragraph="Explore the NFTs in most featured categories." />
       <Category />
       <Subscribe />
+      <Brand />
     </div>
   )
 }
