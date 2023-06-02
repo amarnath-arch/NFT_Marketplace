@@ -27,16 +27,32 @@ const Navbar = () => {
         const btnText = e.target.innerText;
     
         if(btnText == "Discover"){
-            setDiscover(true);
-            setProfile(false);
-            setHelp(false);
-            setNotification(false);
+            if(discover){
+                setDiscover(false);
+                setProfile(false);
+                setHelp(false);
+                setNotification(false);
+            }else{
+                setDiscover(true);
+                setProfile(false);
+                setHelp(false);
+                setNotification(false);
+            }
+            
             // setOpenSideMenu(false);
         }else if(btnText == "Help Center"){
-            setDiscover(false);
-            setProfile(false);
-            setHelp(true);
-            setNotification(false);
+            if(help){
+                setDiscover(false);
+                setProfile(false);
+                setHelp(false);
+                setNotification(false);
+            }else{
+                setDiscover(false);
+                setProfile(false);
+                setHelp(true);
+                setNotification(false);
+            }
+            
         }else{
             setDiscover(false);
             setProfile(false);

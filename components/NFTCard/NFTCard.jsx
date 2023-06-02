@@ -11,7 +11,18 @@ const NFTCard = () => {
     const [like, setLike] = useState(true);
 
 
-    const featureArray = [1,2,3,4,5,6,7,8,9];
+    const featureArray = [
+        images.nft_image_1,
+        images.nft_image_2,
+        images.nft_image_3,
+        images.nft_image_1,
+        images.nft_image_2,
+        images.nft_image_3,
+        images.nft_image_1,
+        images.nft_image_2,
+        images.nft_image_3
+
+    ];
     
     
     const likeNFT = () => {
@@ -30,7 +41,7 @@ const NFTCard = () => {
                 <div className={Style.nftCard_box} key={i+1}>
                     <div className={Style.nftCard_box_img} >
                         <Image
-                            src={images.nft_image_1}
+                            src={el}
                             width={400}
                             height={400}
                             alt="nftImage"

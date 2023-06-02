@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { HeroSection,Services,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,
-        Collection,FollowerTab, AudioLive,Slider,Brand
+        Collection,FollowerTab, AudioLive,Slider,Brand,Video
 } from '@/components/componentindex'
 import Style from "../styles/index.module.css";
 
@@ -27,6 +27,8 @@ const Home = () => {
       <Category />
       <Subscribe />
       <Brand />
+      <Video />
+
     </div>
   )
 }

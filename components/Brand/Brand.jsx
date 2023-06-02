@@ -26,7 +26,9 @@ const Brand = () => {
                     src={images.earn}
                     alt='brand logo'
                     height={600}
-                    width={800}
+                    // width={800}
+                    // style={{width: "100%", height: '50vh'}}
+                    className={Style.brand_box_right_img}
                 />
             </div>
 

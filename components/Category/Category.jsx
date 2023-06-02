@@ -6,7 +6,32 @@ import Image from 'next/image';
 import images from "../../img";
 
 const Category = () => {
-    const categoryArray = [1,2,3,4,5,6];
+    const categoryArray = [
+        {
+            background: images.creatorbackground5,
+            user:   images.user5
+        },
+        {
+            background: images.creatorbackground8,
+            user:   images.user8
+        },
+        {
+            background: images.creatorbackground3,
+            user:   images.user3
+        },
+        {
+            background: images.creatorbackground9,
+            user:   images.user9
+        },
+        {
+            background: images.creatorbackground6,
+            user:   images.user6
+        },
+        {
+            background: images.creatorbackground1,
+            user:   images.user1
+        }
+    ];
 
   return (
 
@@ -16,7 +41,7 @@ const Category = () => {
             categoryArray.map((el,i)=>(
                 <div className={Style.category_box} key={i+1}>
                     <Image 
-                        src={images.creatorbackground1}
+                        src={el.background}
                         alt= "background image"
                         className={Style.category_box_img}
                         width={350}

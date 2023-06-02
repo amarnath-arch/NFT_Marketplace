@@ -6,8 +6,35 @@ import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 import Style from "./slider.module.css";
 import SliderCard from "./SliderCard/SliderCard";
 
+import images from "../../img";
+
 const Slider = () => {
-  const sliderArray = [1, 2, 3, 4, 5, 6];
+  const sliderArray = [
+    {
+      background: images.creatorbackground5,
+      user:   images.user5
+    },
+    {
+        background: images.creatorbackground8,
+        user:   images.user8
+    },
+    {
+        background: images.creatorbackground3,
+        user:   images.user3
+    },
+    {
+        background: images.creatorbackground9,
+        user:   images.user9
+    },
+    {
+        background: images.creatorbackground6,
+        user:   images.user6
+    },
+    {
+        background: images.creatorbackground1,
+        user:   images.user1
+    }
+  ];
   const [width, setWidth] = useState(0);
   const dragSlider = useRef();
 
