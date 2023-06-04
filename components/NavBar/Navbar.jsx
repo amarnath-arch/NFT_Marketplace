@@ -12,6 +12,8 @@ import {Discover,HelpCenter,Notification,Profile,SideBar} from "./index";
 import { Button } from '../componentindex';
 import images from "../../img";
 
+import Link from 'next/link';
+
 
 
 
@@ -98,9 +100,14 @@ const Navbar = () => {
             <div className={Style.navbar_container}>
                 <div className={Style.navbar_container_left}>
                     {/* Logo Section */}
-                    <div className={Style.logo}>
-                        <Image  src={images.logo} height={100} width={100} alt="NFT Marketplace Logo" />
-                    </div>
+
+                    <Link href={{ pathname: '/' }}>
+                        <div className={Style.logo}>
+                            <Image  src={images.logo} height={100} width={100} alt="NFT Marketplace Logo" />
+                        </div>
+                    </Link>
+
+                    
 
                     {/* Search Section */}
                     <div className={Style.navbar_container_left_input}>

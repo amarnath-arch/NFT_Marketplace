@@ -27,7 +27,7 @@ const Home = () => {
       <Category />
       <Subscribe />
       <Brand />
-      <Video />
+      {/* <Video /> */}
 
     </div>
   )

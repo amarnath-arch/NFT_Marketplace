@@ -68,7 +68,7 @@
 
 
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 55em) {
     .footer_box{
         width: 90%;
         grid-template-columns: 1fr 2fr;

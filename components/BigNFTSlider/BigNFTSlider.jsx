@@ -84,15 +84,17 @@ const BigNFTSlider = () => {
 
 
       const inc = useCallback(()=>{
-        if(idNumber+1 < sliderData.length){
-            setIdNumber(idNumber +1);
-        }
+        setIdNumber((idNumber+1)%(sliderData.length))
+        // if(idNumber+1 < sliderData.length){
+        //     setIdNumber(idNumber +1);
+        // }
       },[idNumber,sliderData.length]);
 
       const dec= useCallback(()=>{
-        if(idNumber > 0){
-            setIdNumber(idNumber - 1);
-        }
+        setIdNumber((idNumber-1 + sliderData.length)%(sliderData.length))
+        // if(idNumber > 0){
+        //     setIdNumber(idNumber - 1);
+        // }
       },[idNumber]);
 
 
